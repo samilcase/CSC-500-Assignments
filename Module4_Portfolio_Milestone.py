@@ -1,4 +1,3 @@
-
 class ItemToPurchase:
     
     def __init__(self, name = "none", price = 0.00,quantity = 0):
