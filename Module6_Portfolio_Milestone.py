@@ -1,6 +1,6 @@
 class ItemToPurchase:
     
-    def __init__(self, name = "none", price = 0.00,quantity = 0, description=''):
+    def __init__(self, name = 'none', price = 0.00,quantity = 0, description=''):
         self.name = name
         self.price = price
         self.quantity = quantity
@@ -21,7 +21,7 @@ class ShoppingCart:
     def add_item(self):
         item_name = input('Enter item name: ')
         item_description = input('Enter item description: ')
-        item_price = float(input("Enter the item\'s price: "))
+        item_price = float(input('Enter the item\'s price: '))
         item_quantity = int(input('Enter the item\'s quantity: '))
         
         new_item = ItemToPurchase(item_name,item_price,item_quantity,item_description)
@@ -94,19 +94,19 @@ class ShoppingCart:
     
 def print_menu(cart):
     menu = (
-    "\nMENU\n"
-    "a - Add item to cart\n"
-    "r - Remove item from cart\n"
-    "c - Change item quantity\n"
-    "i - Output items' descriptions\n"
-    "o - Output shopping cart\n"
-    "q - Quit\n"
+    '\nMENU\n'
+    'a - Add item to cart\n'
+    'r - Remove item from cart\n'
+    'c - Change item quantity\n'
+    'i - Output item descriptions\n'
+    'o - Output shopping cart\n'
+    'q - Quit\n'
     )
 
     command = ''
     while command != 'q':
         print(menu)
-        command = input("Choose an option: ").strip().lower()
+        command = input('Choose an option: ').strip().lower()
 
         if command == 'a':
             cart.add_item()
@@ -122,9 +122,9 @@ def print_menu(cart):
             cart.print_total()
             cart.get_cost_of_cart()
         elif command == 'q':
-            print("Goodbye!")
+            print('Goodbye!')
         else:
-            print("Invalid option. Please try again.")
+            print('Invalid option. Please try again.')
 
 def main():
     customer_name = input('Enter customer\'s name: ')
