@@ -1,7 +1,7 @@
 #
 #Sami Case
 #CSC500 Module 7 Critical Thinking Activity
-#Created: November XX, 2024
+#Created: November 23, 2024
 
 #Assignment Prompt
 #-------------------
