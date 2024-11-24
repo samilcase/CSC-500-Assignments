@@ -1,7 +1,7 @@
 #
 #Sami Case
 #CSC500 Module 7 Critical Thinking Activity
-#Created: November XX, 2024
+#Created: November 23, 2024
 
 #Assignment Prompt
 #-------------------
@@ -204,6 +204,7 @@ class ShoppingCart:
         item_name = input('Enter item name: ')
         item_description = input('Enter item description: ')
         item_price = float(input('Enter the item\'s price: '))
+        
         item_quantity = int(input('Enter the item\'s quantity: '))
         
         new_item = ItemToPurchase(item_name,item_price,item_quantity,item_description)
